@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Usuario } from '../../modelos';
+// import { } from '../'
 declare var $: any;
 @Component({
   selector: 'app-ingresar',
@@ -22,6 +23,12 @@ export class IngresarComponent implements OnInit, AfterViewInit {
     // $('input[name="usuario"]').forEach(input => {
     //   input.value = '';
     // });
+    $('body').addClass('gray-bg');
+
+    $('.i-checks').iCheck({
+      checkboxClass: 'icheckbox_square-green',
+      radioClass: 'iradio_square-green',
+    });
   }
 
   prueba() {
